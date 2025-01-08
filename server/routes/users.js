@@ -6,7 +6,7 @@ const router = express.Router();
 
 // Read Routes
 router.get("/:id" , verifyToken , getUser);
-router.get("/:id/friends" , verifyToken , getUsersFriends);
+router.get("/:id/:friendId" , verifyToken , getUsersFriends);
 
 // update Routes
 router.patch("/:id/:friendId" ,verifyToken , addRemoveFriend);
