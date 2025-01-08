@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -54,4 +53,3 @@
   "license": "ISC",
   "description": ""
 }
->>>>>>> 29cf05afc231910cc2ec3f9924ecdea78741ccef
