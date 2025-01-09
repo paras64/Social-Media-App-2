@@ -5,8 +5,8 @@ import {verifyToken} from "../middleware/auth.js";
 const router = express.Router();
 
 // Read Routes
-router.get("/:id" , verifyToken , getUser);
-router.get("/:id/friends" , verifyToken , getUsersFriends);
+router.get("users/:id" , verifyToken , getUser);
+router.get("users/:id/friends" , verifyToken , getUsersFriends);
 
 // update Routes
 router.patch("/users/:id/:friendId", addRemoveFriend);
