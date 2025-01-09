@@ -9,9 +9,7 @@ router.get("users/:id" , verifyToken , getUser);
 router.get("users/:id/friends" , verifyToken , getUsersFriends);
 
 // update Routes
-router.patch("/users/:id/:friendId", addRemoveFriend, (req, res) => {
-  console.log("Route hit with params:", req.params);
-  res.send("OK"););
+router.patch("/users/:id/:friendId", addRemoveFriend);
 
 
 export default router;
