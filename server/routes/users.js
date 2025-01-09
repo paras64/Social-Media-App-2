@@ -5,7 +5,7 @@ import {verifyToken} from "../middleware/auth.js";
 const router = express.Router();
 
 // Read Routes
-router.get("profile/:id" , verifyToken , getUser);
+router.get("/:id" , verifyToken , getUser);
 router.get("users/:id/friends" , verifyToken , getUsersFriends);
 
 // update Routes
